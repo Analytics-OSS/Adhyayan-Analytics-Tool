@@ -1,0 +1,74 @@
+.background {
+  min-height: 100vh;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  width: 50%;
+  position: absolute;
+}
+.glass {
+  background: whitesmoke;
+  margin-top: 10px;
+  min-height: 30vh;
+  width: 75%;
+  border-radius: 10px;
+  box-shadow: 20px, 10px, black;
+}
+
+.uploadBody {
+  position: absolute;
+  padding: 20px;
+  top: 70%;
+  left: 36%;
+}
+.uploadCsv {
+  font-size: 30px;
+}
+.data_details {
+  color: black;
+  position: absolute;
+  margin-top: 3%;
+  margin-left: 7%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.details_form {
+  position: absolute;
+  color: black;
+}
+.items {
+  display: flex;
+  margin-top: 60px;
+  margin-left: -20px;
+  border: 2px solid #4287f5;
+  border-radius: 5px;
+}
+.item-title {
+  font-weight: bold;
+  padding: 3px;
+}
+.file-input {
+  margin-left: 26px;
+  margin-top: 10px;
+  padding-left: 3px;
+  padding-top: 7px;
+  font-weight: bold;
+}
+.text-input {
+  margin-left: 90px;
+  margin-top: 17px;
+  width: 22%;
+  height: 20%;
+}
+.submit-button {
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 30%;
+  margin-left: 15%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4b5ac0;
+}

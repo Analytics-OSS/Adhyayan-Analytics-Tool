@@ -1,26 +1,5 @@
 body {
-  color: black;
-  font-family: "Montserrat", sans-serif;
-}
-.background {
-  min-height: 100vh;
-  background: linear-gradient(to right top, #0f2027, #203a43, #2c5384);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.glass {
-  background: white;
-  margin-top: 390px;
-  min-height: 30vh;
-  width: 70%;
-  background: linear-gradient(
-    to right bottom,
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.3)
-  );
-  border-radius: 10px;
-  box-shadow: 20px, 10px, black;
+  background-color: black;
 }
 .main {
   position: absolute;
@@ -28,29 +7,36 @@ body {
   padding-left: 50px;
 }
 .adhyan {
-  font-size: 150px;
-  padding-top: 100px;
-  margin: 0;
+  font-size: 110px;
+  padding-top: 200px;
+  margin-top: 0;
   text-decoration: underline;
   color: wheat;
 }
 .subHeading {
-  margin-top: 0;
+  margin-top: -80px;
   color: wheat;
 }
-.uploadBody {
-  position: absolute;
-  padding: 20px;
-  top: 60%;
-  left: 36%;
+.description {
+  width: 35%;
+  margin: 0;
+  color: wheat;
 }
-.uploadCsv {
-  font-size: 30px;
+.getStarted {
+  position: absolute;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-family: "Montserrat", sans-serif;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #4b5ac0;
 }
 .dataImage {
   position: absolute;
-  width: 70%;
-  height: 130%;
+  width: 50%;
+  height: 100%;
   top: 30%;
-  left: 120%;
+  left: 50%;
 }

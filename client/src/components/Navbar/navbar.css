@@ -1,0 +1,23 @@
+.nav {
+  padding: 0;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  color: wheat;
+}
+.brand {
+  text-decoration: none;
+  color: wheat;
+  margin-left: 30px;
+  font-size: 30px;
+  text-decoration: underline;
+}
+.nav-items {
+  margin-left: 70%;
+}
+.item {
+  display: inline;
+  padding-left: 50px;
+  text-decoration: none;
+  color: wheat;
+}
