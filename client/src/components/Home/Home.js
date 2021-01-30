@@ -7,7 +7,9 @@ import './home.css'
 
 export default function Home() {
     return (
-        <Fragment className = 'HomeBody'>
+        <Fragment >
+            <div className = 'HomeBody'>
+
             <Navbar/>
             <div className = 'main'>
                 <h1 className = "adhyan">Adhyan</h1>
@@ -21,6 +23,7 @@ export default function Home() {
                 <Link exact to = '/submitDetails' className = 'getStarted'>
                     Get Started!</Link>
         </div>
+            </div>
         </Fragment>
     )
 }

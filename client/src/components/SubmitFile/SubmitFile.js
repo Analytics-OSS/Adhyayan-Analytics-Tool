@@ -1,7 +1,11 @@
 import React,{useEffect,useState,Fragment} from 'react'
 import ReactS3 from 'react-s3'
+import Axios from 'axios'
 import Button from '@material-ui/core/Button'
 import Navbar from '../Navbar/Navbar'
+import Visualization from '../Visualization/Visualization'
+import { embed as BokehEmbed } from "@bokeh/bokehjs"
+
 import './submitFile.css'
 
 
@@ -10,6 +14,7 @@ export default function SubmitFile() {
     const [csvID,setCsvID] = useState('')
     const [xVar, setXVar] = useState('')
     const [yVar,setYVar] = useState('')
+    const [data,setData] = useState('test')
 
     const config = {
         bucketName: 'adhyan-csv-storage',
@@ -22,7 +27,7 @@ export default function SubmitFile() {
         console.log(e.target)
         ReactS3.uploadFile(e.target.files[0],config)
         .then((data)=>{
-            console.log(data.location)
+            //console.log(data.location)
             setCsvID(data.location)
         })
         .catch((err)=>console.log(err))
@@ -33,7 +38,7 @@ const submit = async(e) =>{
     const details = {
       csvLink: csvID,
       xvar: xVar,
-      yVar: yVar
+      yvar: yVar
     }
     const response = await fetch("/submit",{
       method: "POST",
@@ -47,6 +52,13 @@ const submit = async(e) =>{
   }
 }
 
+const getResult = ()=>{
+   
+   Axios.get('/submit')
+   .then(resp=>BokehEmbed.embed_item(resp.data,'dataPlot'))
+
+}
+  
 
 return (
   <Fragment>
@@ -81,7 +93,9 @@ return (
             </li>
           </ul>
           <button onClick = {submit} className = "submit-button">Submit</button>
-
+          <button onClick = {getResult} className = "getResult-button">Get Result</button>
+          
+          <div className = 'resultedData' id = 'dataPlot'></div>
    
   </Fragment>
 );
