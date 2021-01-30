@@ -1,2 +1,2 @@
-# Adhyan-Analytics-Tool
-Data visualization made easy
+# Adhyan-Analytics Tool
+## Data visualization made easy

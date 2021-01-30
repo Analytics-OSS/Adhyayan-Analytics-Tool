@@ -6,9 +6,31 @@ import Button from '@material-ui/core/Button'
 import './home.css'
 
 export default function Home() {
+<<<<<<< HEAD
     return (
         <Fragment >
             <div className = 'HomeBody'>
+=======
+    
+    const [csvID,setCsvID] = useState('')
+
+    const config = {
+        bucketName: 'adhyan-csv-storage',
+        dirName: 'csvStorage', /* optional */
+        region: 'ap-south-1',
+        accessKeyId:  ,
+        secretAccessKey: ,
+    }
+    const upload = (e)=>{
+        console.log(e.target)
+        ReactS3.uploadFile(e.target.files[0],config)
+        .then((data)=>{
+            //console.log(data.location)
+            setCsvID(data.location)
+        })
+        .catch((err)=>console.log(err))
+}
+>>>>>>> d95c31a7820a4ce90685639d02a5535abd9e9799
 
             <Navbar/>
             <div className = 'main'>
