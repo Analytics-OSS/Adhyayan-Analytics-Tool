@@ -20,8 +20,8 @@ export default function SubmitFile() {
         bucketName: 'adhyan-csv-storage',
         dirName: 'csvStorage', /* optional */
         region: 'ap-south-1',
-        accessKeyId: "AKIAVSBDGESQYIHAAT57" ,
-        secretAccessKey: "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",
+        accessKeyId: "" ,
+        secretAccessKey: "",
     }
     const upload = (e)=>{
         console.log(e.target)
