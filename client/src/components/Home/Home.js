@@ -1,27 +1,22 @@
-import React,{Fragment} from 'react'
+import React,{Fragment,useState} from 'react'
 import {Link,BrowserRouter as Router} from 'react-router-dom'
 import data from '../../assets/data.png'
 import Navbar from '../Navbar/Navbar'
 import Button from '@material-ui/core/Button'
+import ReactS3 from 'react-s3'
 import './home.css'
 
 export default function Home() {
-<<<<<<< HEAD
-    return (
-        <Fragment >
-            <div className = 'HomeBody'>
-=======
-    
     const [csvID,setCsvID] = useState('')
 
     const config = {
         bucketName: 'adhyan-csv-storage',
         dirName: 'csvStorage', /* optional */
         region: 'ap-south-1',
-        accessKeyId:  ,
-        secretAccessKey: ,
+        accessKeyId: 'AKIAVSBDGESQ4IZMVP6D' ,
+        secretAccessKey: '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' ,
     }
-    const upload = (e)=>{
+    const upload = (e) =>{
         console.log(e.target)
         ReactS3.uploadFile(e.target.files[0],config)
         .then((data)=>{
@@ -30,8 +25,10 @@ export default function Home() {
         })
         .catch((err)=>console.log(err))
 }
->>>>>>> d95c31a7820a4ce90685639d02a5535abd9e9799
 
+    return (
+        <Fragment >
+            <div className = 'HomeBody'>
             <Navbar/>
             <div className = 'main'>
                 <h1 className = "adhyan">Adhyan</h1>
