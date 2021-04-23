@@ -11,7 +11,7 @@ import boto3
 app = flask.Flask(__name__)
 CORS(app, resources=r'/*')
 
-client = MongoClient('mongodb://localhost:27017/')
+client = MongoClient("mongodb+srv://admin:admin123@cluster0.xraoe.mongodb.net/adhyan?retryWrites=true&w=majority")
 db = client.adhyan
 info = db.file_info
 
