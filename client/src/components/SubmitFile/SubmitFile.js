@@ -51,15 +51,7 @@ const submit = async(e) =>{
       console.log(error)
   }
 }
-
-const getResult = ()=>{
-   
-   Axios.get('/submit')
-   .then(resp=>BokehEmbed.embed_item(resp.data,'dataPlot'))
-
-}
   
-
 return (
   <Fragment>
     <Navbar/>
@@ -93,9 +85,8 @@ return (
             </li>
           </ul>
           <button onClick = {submit} className = "submit-button">Submit</button>
-          <button onClick = {getResult} className = "getResult-button">Get Result</button>
           
-          <div className = 'resultedData' id = 'dataPlot'></div>
+          
    
   </Fragment>
 );

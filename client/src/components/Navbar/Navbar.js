@@ -7,10 +7,10 @@ export default function Navbar() {
         <Fragment>
           <Router>
             <div className="nav">
-               <Link className = 'brand' exact to = '/'>Adhyan</Link>
+               <Link className = 'brand' exact to = '/'>Adhyayan</Link>
                <section className = 'nav-items'>
-                <Link className = 'item' exact to = '/'>Navitem1</Link>
-                <Link className = 'item' exact to = '/'>Navitem2</Link>
+                <Link className = 'item' exact to = '/'>About Us</Link>
+                <Link className = 'item' exact to = '/'>Contact</Link>
                </section>
             </div>
           </Router>

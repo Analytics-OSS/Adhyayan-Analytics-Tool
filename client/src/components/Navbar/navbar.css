@@ -3,11 +3,11 @@
   margin-top: 20px;
   margin-bottom: 10px;
   display: flex;
-  color: wheat;
+  color: #d41fff;
 }
 .brand {
   text-decoration: none;
-  color: wheat;
+  color: #d41fff;
   margin-left: 30px;
   font-size: 30px;
   text-decoration: underline;
@@ -19,5 +19,5 @@
   display: inline;
   padding-left: 50px;
   text-decoration: none;
-  color: wheat;
+  color: #d41fff;
 }

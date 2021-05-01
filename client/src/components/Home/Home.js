@@ -31,7 +31,7 @@ export default function Home() {
             <div className = 'HomeBody'>
             <Navbar/>
             <div className = 'main'>
-                <h1 className = "adhyan">Adhyan</h1>
+                <h1 className = "adhyan">Adhyayan</h1>
                 <h2 className = "subHeading">Data Visualization and Analytics Tool</h2>
                 <p className = 'description'>Lorem ipsum dolor sit 
                 amet, consectetur adipiscing elit, sed do

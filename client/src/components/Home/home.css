@@ -1,5 +1,5 @@
 body {
-  background-color: black;
+  background-color: #fff9e8;
 }
 .main {
   position: absolute;
@@ -11,16 +11,16 @@ body {
   padding-top: 200px;
   margin-top: 0;
   text-decoration: underline;
-  color: wheat;
+  color: #eea8ff;
 }
 .subHeading {
   margin-top: -80px;
-  color: wheat;
+  color: #a048b5;
 }
 .description {
   width: 35%;
   margin: 0;
-  color: wheat;
+  color: #a048b5;
 }
 .getStarted {
   position: absolute;
@@ -31,7 +31,7 @@ body {
   margin-top: 10px;
   padding: 10px;
   border-radius: 5px;
-  background-color: #4b5ac0;
+  background-color: #d41fff;
 }
 .dataImage {
   position: absolute;
