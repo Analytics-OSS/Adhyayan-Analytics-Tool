@@ -6,13 +6,13 @@ export default function Navbar() {
     return (
         <Fragment>
           <Router>
-            <div className="nav">
-               <Link className = 'brand' exact to = '/'>Adhyayan</Link>
+            <section className="nav">
+               <Link className = 'brand' exact to = '/'><h2>Adhyayan</h2></Link>
                <section className = 'nav-items'>
                 <Link className = 'item' exact to = '/'>About Us</Link>
                 <Link className = 'item' exact to = '/'>Contact</Link>
                </section>
-            </div>
+            </section>
           </Router>
         </Fragment>
     )

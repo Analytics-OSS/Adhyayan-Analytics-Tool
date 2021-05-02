@@ -1,4 +1,4 @@
-.nav {
+/* .nav {
   padding: 0;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -10,7 +10,6 @@
   color: #d41fff;
   margin-left: 30px;
   font-size: 30px;
-  text-decoration: underline;
 }
 .nav-items {
   margin-left: 70%;
@@ -19,5 +18,32 @@
   display: inline;
   padding-left: 50px;
   text-decoration: none;
-  color: #d41fff;
+  color: wheat;
+} */
+
+.nav {
+  position: absolute;
+  width: 90%;
+  display: flex;
+  align-items: center;
+  padding: 15px 50px 0;
+  justify-content: space-between;
+  animation: 1s fadein 0.5s forwards;
+  color: aqua;
+}
+
+.brand {
+  text-decoration: none;
+  color: black;
+}
+
+.nav-items {
+  display: flex;
+  margin-left: -15px;
+}
+
+.item {
+  margin: 0 10px;
+  text-decoration: none;
+  color: black;
 }

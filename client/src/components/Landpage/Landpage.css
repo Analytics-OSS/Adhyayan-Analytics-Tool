@@ -1,0 +1,109 @@
+body{
+    background-color: aliceblue;
+}
+
+ul{
+    list-style: none;
+}
+
+.Landpage-central {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 170px 0;
+    min-height: auto;
+
+}
+
+.Landpage-central h1{
+    font: bold 80px "Open Sans", sans-serif;
+    margin-bottom: 10px;
+}
+
+.Landpage-central h3{
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.getStarted {
+    text-decoration: none;
+    opacity: 0.65;
+    border-radius: 5px;
+    color: white;
+    background-color: #3f51b5;
+    padding: 20px 45px;
+    text-align: center;
+}
+
+.getStarted:hover {
+    opacity: 1;
+}
+
+.about-us{
+    padding-top: 55px;
+    padding-bottom: 100px;
+    width: 90%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+
+.about-us li {
+    padding: 20px;
+    flex-basis: 33%;
+    text-align: center;
+}
+
+.about-us img {
+    width: 400px;
+}
+
+@media (max-width: 1300px) {
+    .about-us{
+        flex-wrap: wrap;
+        
+    }
+}
+
+@media (max-width: 800px) {
+    .about-us{
+        flex-wrap: wrap;
+    }
+}
+
+.contact{
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #3f51b5;
+  opacity: 0.7;
+  color: #fff;}
+
+.contact ul {
+    display: flex;
+}
+
+.contact ul li {
+    margin-left: 10px;
+}
+
+.contact p {
+    font-size: 14px;
+    align-self: center;
+}
+
+@media (max-width: 1100px) {
+    .contact{
+        flex-direction: column;
+    }
+
+    .contact p {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .contact ul li {
+        margin: 0 8px;
+    }
+}
