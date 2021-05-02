@@ -2,8 +2,8 @@ import React,{useEffect,useState,Fragment} from 'react'
 import ReactS3 from 'react-s3'
 import Axios from 'axios'
 import Button from '@material-ui/core/Button'
-import Navbar from '../Navbar/Navbar'
 import Visualization from '../Visualization/Visualization'
+import Navbar from "../Navbar/Navbar"
 import { embed as BokehEmbed } from "@bokeh/bokehjs"
 
 import './submitFile.css'
@@ -54,6 +54,7 @@ const submit = async(e) =>{
   
 return (
   <Fragment>
+    <Navbar/>
     <div className="file-details"></div>
     <input className = 'file-input' type = 'file' onChange = {upload}/>
     <button onClick = {submit} className = "submit-button">Submit</button>  
