@@ -1,27 +1,4 @@
-/* .nav {
-  padding: 0;
-  margin-top: 20px;
-  margin-bottom: 10px;
-  display: flex;
-  color: wheat;
-}
-.brand {
-  text-decoration: none;
-  color: wheat;
-  margin-left: 30px;
-  font-size: 30px;
-}
-.nav-items {
-  margin-left: 70%;
-}
-.item {
-  display: inline;
-  padding-left: 50px;
-  text-decoration: none;
-  color: wheat;
-} */
-
-.nav{
+.nav {
   position: absolute;
   width: 90%;
   display: flex;
@@ -32,7 +9,27 @@
   color: aqua;
 }
 
-.brand{
+.brand {
+  padding-top: 0;
+  margin-top: -10px;
+  text-decoration: none;
+  display: flex;
+  font-size: 20px;
+  color: black;
+}
+.logo {
+  width: 15%;
+  padding-bottom: 0;
+  display: inline-block;
+}
+
+.nav-items {
+  display: flex;
+  margin-left: -15px;
+}
+
+.item {
+  margin: 0 10px;
   text-decoration: none;
   color: black;
 }

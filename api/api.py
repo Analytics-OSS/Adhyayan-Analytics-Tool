@@ -7,6 +7,7 @@ from bokeh.plotting import figure, output_file, show
 from bokeh.embed import json_item
 import pandas as pd
 import boto3
+from .routes import main
 
 app = flask.Flask(__name__)
 CORS(app, resources=r'/*')
@@ -15,31 +16,13 @@ client = MongoClient("mongodb+srv://admin:admin123@cluster0.xraoe.mongodb.net/ad
 db = client.adhyan
 info = db.file_info
 
+app.register_blueprint(main)
+
 boto_client = boto3.client('s3')
 
 def json_response(payload,status = 200):
     return (flask.json.dumps(payload),status,{'content-type':'application/json'})
 
-
-@app.route('/',methods = ['GET'])
-#@cross_origin(origin = 'localhost',headers=['Access-Control-Allow-Origin'] )
-def api():
-    return 'getReq'
-
-@app.route('/submit',methods = ['POST'])
-#@cross_origin(origin = 'localhost',headers=['Access-Control-Allow-Origin'] )
-
-def submit():
-    datastr = json.dumps(flask.request.get_json())
-    data = json.loads(datastr)
-    recieved_info = {
-        "csvURI":data['csvLink'],
-        "xvar":data['xvar'],
-        "yvar":data['yvar']
-    }
-    info_id = info.insert_one(recieved_info).inserted_id
-    
-    return 'DONE',201
 
 @app.route('/submit',methods = ['GET'])
 #@cross_origin(origin = 'localhost',headers=['Access-Control-Allow-Origin'] )
