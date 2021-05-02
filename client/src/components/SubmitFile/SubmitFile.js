@@ -54,40 +54,9 @@ const submit = async(e) =>{
   
 return (
   <Fragment>
-    <Navbar/>
-          <div className = "background">
-            <section className="glass"></section>
-          </div>
-      
-          <h3 className = "data_details">Enter Details of your data</h3>
-          <ul className = 'details_form'>
-            <li className = 'items'>
-              <p className='item-title'>Upload your CSV file:</p>
-              <input className = 'file-input'type = 'file' onChange = {upload}/>
-            </li>
-            <li className = 'items'>
-              <p className='item-title'>Enter x variable:</p>
-              <input className = 'text-input'
-                     type = 'text'
-                     onChange = {(e)=>
-                     {setXVar(e.target.value)
-                      console.log(xVar)
-              }}/>
-            </li>
-            <li className = 'items'>
-              <p className='item-title'>Enter y variable:</p>
-              <input className = 'text-input'
-                     type = 'text'
-                     onChange = {(e)=>
-                     {setYVar(e.target.value)
-                      console.log(yVar)
-              }}/>
-            </li>
-          </ul>
-          <button onClick = {submit} className = "submit-button">Submit</button>
-          
-          
-   
+    <div className="file-details"></div>
+    <input className = 'file-input' type = 'file' onChange = {upload}/>
+    <button onClick = {submit} className = "submit-button">Submit</button>  
   </Fragment>
 );
 }
