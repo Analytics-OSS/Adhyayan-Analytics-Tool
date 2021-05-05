@@ -1,0 +1,199 @@
+.file-details {
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  height: 570px;
+  margin-top: 5rem;
+  margin-left: 0.5rem;
+  position: relative;
+  width: 300px;
+  overflow: scroll;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  scrollbar-width: none;
+}
+.file-details::-webkit-scrollbar {
+  display: none;
+}
+.details-heading {
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.65;
+  border-radius: 5px;
+  color: white;
+  background-color: #3f51b5;
+  padding: 20px 45px;
+  margin-top: -10px;
+  text-align: center;
+}
+.chart-area {
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  height: 570px;
+  width: 55%;
+  margin-top: 5rem;
+  margin-left: 0.5rem;
+  position: relative;
+  overflow: scroll;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  scrollbar-width: none;
+}
+.chart-area::-webkit-scrollbar {
+  display: none;
+}
+.tools-area {
+  background: #fff;
+  border-radius: 5px;
+  display: inline-block;
+  height: 570px;
+  margin-top: 5rem;
+  margin-left: 0.5rem;
+  position: relative;
+  width: 250px;
+  overflow: scroll;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  scrollbar-width: none;
+}
+.tools-area::-webkit-scrollbar {
+  display: none;
+}
+.tools-heading {
+  text-align: center;
+  text-decoration: none;
+  opacity: 0.65;
+  border-radius: 5px;
+  color: white;
+  background-color: #ff0d0d;
+  padding: 20px 45px;
+  margin-top: -10px;
+  text-align: center;
+}
+.file {
+  opacity: 0;
+  width: 200px;
+  height: 50px;
+  position: absolute;
+}
+.file-input {
+  margin-left: 32%;
+  margin-top: 10%;
+}
+.file-input label {
+  display: block;
+  position: relative;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  background: linear-gradient(40deg, #a66eff, #f5b273);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+}
+.fileUpload-icon {
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.submit-button {
+  text-decoration: none;
+  margin-top: 10%;
+  margin-left: 45%;
+  border-radius: 5px;
+  border: white;
+  color: white;
+  background-color: #5c1a1b;
+  padding: 20px 45px;
+  text-align: center;
+}
+
+.center-getResult-button {
+  display: block;
+  position: absolute;
+  margin-left: 0%;
+  margin-top: 5%;
+  width: 200px;
+  height: 50px;
+  border-radius: 25px;
+  border: none;
+  background: linear-gradient(40deg, #a66eff, #f5b273);
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  font-family: "Montserrat", sans-serif;
+}
+
+.no_file_tagline {
+  margin-top: 50%;
+  margin-left: 0%;
+  color: white;
+  background: #576cdf;
+  text-align: center;
+}
+
+.side-getResult-button {
+  display: block;
+  margin-left: 0%;
+  margin-top: -5%;
+  width: inherit;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background: #0f1020;
+  box-shadow: 0 4px 7px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease-out;
+  font-family: "Montserrat", sans-serif;
+}
+.details-div {
+  border: 2px solid #8493e7;
+  border-radius: 10px;
+  background: whitesmoke;
+  height: inherit;
+}
+.detail-name {
+  background: white;
+  width: inherit;
+  text-align: center;
+}
+.detail-value {
+  margin-left: 5%;
+}
+.checkbox-label {
+  margin-left: 10%;
+}
+.graphArea {
+  background: rgb(182, 182, 182);
+  width: inherit;
+  height: 60%;
+  margin-left: 10%;
+  margin-top: 15%;
+}
+.variable-select {
+  background: #f75353;
+  color: white;
+  width: inherit;
+  height: 20%;
+  text-align: center;
+  border-radius: 5px;
+}
+.enter-variable {
+  color: white;
+}
+.text-input {
+  margin-bottom: 5%;
+}
