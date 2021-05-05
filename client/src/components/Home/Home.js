@@ -2,6 +2,7 @@ import React,{Fragment,useState} from 'react'
 import Button from '@material-ui/core/Button'
 import ReactS3 from 'react-s3'
 import Landpage from '../Landpage/Landpage'
+import ContactForm from '../ContactForm/ContactForm'
 import './home.css'
 
 export default function Home() {
@@ -28,6 +29,7 @@ export default function Home() {
         <Fragment >
             <div className = 'HomeBody'>
                 <Landpage/>
+                <ContactForm />
             </div>
         </Fragment>
     )
