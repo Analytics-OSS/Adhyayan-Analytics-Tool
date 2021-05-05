@@ -11,8 +11,8 @@ class Landpage extends Component {
                 <Navbar/>
                 <div className="graph-img"></div>
                 <section className="Landpage-central">
-                    <h1>Adhyayan</h1>
-                    <h3>Data Visualisation made easy.</h3>
+                    <h1 className = "main-heading">Adhyayan</h1>
+                    <h3 className = "tagline">Data Visualisation made easy.</h3>
                     <Link exact to = '/submitDetails' className = 'getStarted'>
                     Get Started!</Link>
                 </section>

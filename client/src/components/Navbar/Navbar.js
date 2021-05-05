@@ -3,23 +3,21 @@ import {Link,BrowserRouter as Router} from 'react-router-dom'
 
 import './navbar.css'
 
-import Adh from "../../assets/Adh.svg"
-
+import Adh from "../../assets/Adhyayan.svg"
 
 export default function Navbar() {
     return (
         <Fragment>
           <Router>
-            <section className="nav">
-               <Link className = 'brand' exact to = '/'>
-                  <img className = "logo"src={Adh} />
-                  <h2>Adhyayan</h2>
+            <div className="nav">
+               <Link exact to = '/' className = "brand">
+                  <img className = "logo brand"src={Adh} />
                 </Link>
-               <section className = 'nav-items'>
+               <div className = 'nav-items'>
                 <Link className = 'item' exact to = '/'>About Us</Link>
                 <Link className = 'item' exact to = '/'>Contact</Link>
-               </section>
-            </section>
+               </div>
+            </div>
           </Router>
         </Fragment>
     )
