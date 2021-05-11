@@ -9,11 +9,11 @@ export default function Home() {
     const [csvID,setCsvID] = useState('')
 
     const config = {
-        bucketName: 'adhyan-csv-storage',
-        dirName: 'csvStorage', /* optional */
-        region: 'ap-south-1',
-        accessKeyId: 'AKIAVSBDGESQ4IZMVP6D' ,
-        secretAccessKey: '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' ,
+        bucketName: '',
+        dirName: '', /* optional */
+        region: '',
+        accessKeyId: '' ,
+        secretAccessKey: '' ,
     }
     const upload = (e) =>{
         console.log(e.target)

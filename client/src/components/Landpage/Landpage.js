@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
-import { Parallax, ParallaxLayer } from 'react-spring'
 import Navbar from '../Navbar/Navbar'
 import './Landpage.css'
 

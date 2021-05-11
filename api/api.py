@@ -12,13 +12,12 @@ from bson import ObjectId
 app = flask.Flask(__name__)
 CORS(app, resources=r'/*')
 
-client = MongoClient("mongodb+srv://admin:admin123@cluster0.xraoe.mongodb.net/adhyayan?retryWrites=true&w=majority")
+client = MongoClient()
 db = client.adhyayan
 file_path_details = db.file_info
 file_details = db.file_details
 variable_details = db.variable_details
 
-app.register_blueprint(main)
 
 boto_client = boto3.client('s3')
 
