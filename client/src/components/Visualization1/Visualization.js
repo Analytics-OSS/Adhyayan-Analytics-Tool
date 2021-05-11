@@ -12,13 +12,6 @@ export default function Visualization() {
         .then(resp=>BokehEmbed.embed_item(resp.data,'dataPlot'))
      
      }
-    // useEffect(
-    //     async()=>{
-    //    const response =  await fetch('http://127.0.0.1:5000/submit')
-    //                             .then(res => res.json())
-    //                             .then((result)=>setData(result))
-    //                             .catch((e)=>console.log(e))
-    //     },[])
     
     return (
         <Fragment>
