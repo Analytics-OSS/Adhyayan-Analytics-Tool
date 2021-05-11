@@ -3,7 +3,7 @@ import {Link,BrowserRouter as Router} from 'react-router-dom'
 
 import './navbar.css'
 
-import Adh from "../../assets/Adhyayan.svg"
+import Adh from "../../assets/newsvg.svg"
 
 export default function Navbar() {
     return (
@@ -11,7 +11,7 @@ export default function Navbar() {
           <Router>
             <div className="nav">
                <Link exact to = '/' className = "brand">
-                  <img className = "logo brand"src={Adh} />
+                  <img className = "logo brand"src={Adh} alt="Adhyayan"/>
                 </Link>
                <div className = 'nav-items'>
                 <Link className = 'item' exact to = '/'>About Us</Link>
