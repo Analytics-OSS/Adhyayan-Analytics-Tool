@@ -12,7 +12,9 @@ from bson import ObjectId
 app = flask.Flask(__name__)
 CORS(app, resources=r'/*')
 
+
 client = MongoClient()
+
 db = client.adhyayan
 file_path_details = db.file_info
 file_details = db.file_details
