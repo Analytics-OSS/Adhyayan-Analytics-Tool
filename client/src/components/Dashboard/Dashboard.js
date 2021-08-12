@@ -22,11 +22,11 @@ export default function SubmitFile() {
     const [yVar,setYVar] = useState("")
 
     const config = {
-      bucketName: '',
-      dirName: '', /* optional */
-      region: '',
-      accessKeyId: "" ,
-      secretAccessKey: "",
+      bucketName: "adhyan-csv-storage",
+      dirName: "csvStorage", /* optional */
+      region: "ap-south-1",
+      accessKeyId: "AKIAVSBDGESQQN2VNYM2" ,
+      secretAccessKey: "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",
     }
     
 
@@ -53,7 +53,7 @@ export default function SubmitFile() {
           },
           body: JSON.stringify(details)
         })
-       
+        console.log(details)
       } catch (error) {
           console.log(error)
       }

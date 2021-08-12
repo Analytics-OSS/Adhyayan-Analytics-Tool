@@ -13,7 +13,7 @@ app = flask.Flask(__name__)
 CORS(app, resources=r'/*')
 
 
-client = MongoClient()
+client = MongoClient("mongodb+srv://admin:admin123@cluster0.xraoe.mongodb.net/adhyayan?retryWrites=true&w=majority")
 
 db = client.adhyayan
 file_path_details = db.file_info
